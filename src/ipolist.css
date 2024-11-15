@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Sora', sans-serif;
+  }
+  
+  .ipo-list {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .ipo-list-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 15px;
+    font-weight: bold;
+    color: #777;
+  }
+  
+  .ipo-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .ipo-list-item:first-of-type {
+    border-top: none;
+  }
+  
+  .company-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-basis: 40%;
+  }
+  
+  .company-info img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .company-info h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #2b2b2b;
+  }
+  
+  .company-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .issue-size, .price-range, .min-invest {
+    flex-basis: 20%;
+    text-align: center;
+  }
+  
+  .min-invest p {
+    margin: 2px 0;
+  }
+  
+  @media (max-width: 600px) {
+    .ipo-list-header, .ipo-list-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .company-info, .issue-size, .price-range, .min-invest {
+      width: 100%;
+      text-align: left;
+      margin: 5px 0;
+    }
+    
+    .company-info h3 {
+      font-size: 14px;
+    }
+    
+    .issue-size, .price-range, .min-invest p {
+      font-size: 12px;
+    }
+  }  
